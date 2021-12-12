@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/all_16dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/autocomplete_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_circle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/autocomplete_text"
+        app:layout_constraintTop_toTopOf="@id/autocomplete_text"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/autocomplete_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        style="?android:attr/dropDownItemStyle"
+        android:layout_marginTop="@dimen/all_16dp"
+        android:layout_marginStart="@dimen/all_16dp"
+        android:textSize="@dimen/all_16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/autocomplete_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/lorem_ipsum" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/grey1"
+        android:layout_marginTop="@dimen/all_16dp"
+        app:layout_constraintStart_toStartOf="@+id/autocomplete_icon"
+        app:layout_constraintTop_toBottomOf="@+id/autocomplete_text"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

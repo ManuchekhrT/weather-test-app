@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppCompatEditTextStyle">
+        <item name="android:background">@drawable/bg_rounded_edt</item>
+        <item name="android:drawableStart">@drawable/ic_location_mark</item>
+        <item name="android:drawablePadding">@dimen/all_16dp</item>
+        <item name="android:textSize">@dimen/all_16sp</item>
+        <item name="android:textColorHint">@color/grey1</item>
+    </style>
+    <style name="AppCompatBtn">
+        <item name="android:background">@drawable/bg_btn</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/all_18sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Widget.App.Button.IconOnly" parent="Widget.MaterialComponents.Button.OutlinedButton" >
+        <item name="iconPadding">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:minWidth">12dp</item>
+        <item name="android:minHeight">12dp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="strokeWidth">3dp</item>
+        <item name="android:solidColor">@color/main</item>
+        <item name="strokeColor">@color/main</item>
+    </style>
+    <style name="ShapeAppearanceOverlay.MyApp.Button.Circle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>
