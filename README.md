@@ -15,6 +15,7 @@ Technology (libs) used:
 - MVVM pattern
 - DI Hilt
 - Network handling - Retrofit, Gson, OkHttp logging
+- Asyncronous req handling - Coroutines Flow, MutableStateFlow/StateFlow
 - Navigation components
 - SwipeRefreshLayout from androidx
 - Glide image handling 
